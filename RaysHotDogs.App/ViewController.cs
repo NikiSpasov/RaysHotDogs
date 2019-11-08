@@ -25,5 +25,20 @@ namespace RaysHotDogs.App
             base.DidReceiveMemoryWarning ();
             // Release any cached data, images, etc that aren't in use.
         }
+
+        partial void OrderButton_TouchUpInside(UIButton sender)
+        {
+            throw new NotImplementedException();
+        }
+
+        partial void UIButton885_TouchUpInside(UIButton sender)
+        {
+            throw new NotImplementedException();
+        }
+
+        partial void OrderButton_TouchUpInside(UIButton sender)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -16,10 +16,32 @@ namespace RaysHotDogs.App
     {
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton CancelButton { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView HotDog { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UIButton OrderButton { get; set; }
+
+        [Action ("OrderButton_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void OrderButton_TouchUpInside (UIKit.UIButton sender);
 
         void ReleaseDesignerOutlets ()
         {
+            if (CancelButton != null) {
+                CancelButton.Dispose ();
+                CancelButton = null;
+            }
+
+            if (HotDog != null) {
+                HotDog.Dispose ();
+                HotDog = null;
+            }
+
             if (OrderButton != null) {
                 OrderButton.Dispose ();
                 OrderButton = null;
